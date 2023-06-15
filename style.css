@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*This is header tag for desigining the header of the webpage */
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)) ,url(Images/personal/homepage2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+/*This tag for desigining the logo and the ui links present */
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Tag for alligning the image */
+nav img{
+    width: 250px;
+}
+
+/*Tag include under the nav links */
+.nav-links{
+    flex: 1;
+    text-align: right;
+    color: rgb(246, 239, 231);
+}
+
+
+/*The link that presnet on the page is designed from over here */
+.nav-links ul li{
+    list-style: bold;
+    display: inline-block;
+    padding: 12px 20px;
+    position: relative;
+    border: 100px;
+    margin-right: 12px;
+}
+
+/*This tag define the colour of the links that I have added on the header */
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-style: bold;
+}
