@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 /*This is header tag for desigining the header of the webpage */
 .header{
@@ -35,16 +36,55 @@ nav img{
 .nav-links ul li{
     list-style: bold;
     display: inline-block;
-    padding: 12px 20px;
+    padding: 12px 24px;
     position: relative;
-    border: 100px;
-    margin-right: 12px;
+    /*border: 100px;
+    margin-right: 12px;*/
 }
 
 /*This tag define the colour of the links that I have added on the header */
 .nav-links ul li a{
     color: white;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 12px;
     font-style: bold;
+}
+
+/*Adding the hover effect */
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+/* Adding the hovwe effect when the cursor is present on the tags */
+.nav-links ul li:hover:after{
+    width: 100%;
+}
+
+/* Property of the text box that is present under the section*/
+.text-box{
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+/* Heading property */
+.text-box h1{
+    font-size: 48px;
+}
+
+/* Paragraph property to be set */
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
 }
